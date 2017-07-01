@@ -24,7 +24,7 @@ public class StudentProcessor implements MessageProcessor{
 			if(isValidStudent(payload)){
 				payload.put(AppConstants.FLAG.toString(),"F");
 			}else{
-				payload.put(AppConstants.FLAG.toString(),"");
+				payload.put(AppConstants.FLAG.toString(),"T");
 			}
 			studentMessage.setPayload(payload);
 			event.setMessage(studentMessage);
